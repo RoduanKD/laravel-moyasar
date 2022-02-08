@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RoduanKD\LaravelMoyasar\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelMoyasarCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravelmoyasar';
 
     public $description = 'My command';
 
