@@ -2,9 +2,9 @@
 
 namespace RoduanKD\LaravelMoyasar;
 
+use RoduanKD\LaravelMoyasar\Commands\LaravelMoyasarCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RoduanKD\LaravelMoyasar\Commands\LaravelMoyasarCommand;
 
 class LaravelMoyasarServiceProvider extends PackageServiceProvider
 {
@@ -20,7 +20,7 @@ class LaravelMoyasarServiceProvider extends PackageServiceProvider
             ->hasViews('laravel-moyasar')
             ->hasRoute('web')
             ->hasConfigFile('moyasar');
-            // ->hasMigration('create_laravelmoyasar_table')
+        // ->hasMigration('create_laravelmoyasar_table')
             // ->hasCommand(LaravelMoyasarCommand::class);
     }
 }

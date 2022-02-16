@@ -18,10 +18,10 @@ class MoyasarInit extends Component
         public ?string $description = null,
         public ?string $callback = null,
         public ?array $methods = null
-    )
-    {
-        if ($this->amount < 0)
+    ) {
+        if ($this->amount < 0) {
             throw new AmountCanNotBeNegativeException('amount can not be negative, you provided: ' . $this->amount);
+        }
     }
 
     /**
