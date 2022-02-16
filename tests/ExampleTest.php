@@ -2,7 +2,7 @@
 
 it('can export head partials', function () {
     $original = file_get_contents(__DIR__ . '/../resources/views/head.blade.php');
-    $compiled = view('laravel-moyasar::head')->render();
+    $compiled = view('laravelmoyasar::head')->render();
 
     expect($compiled)->toBe($original);
 });
