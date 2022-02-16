@@ -3,11 +3,14 @@
 namespace RoduanKD\LaravelMoyasar\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RoduanKD\LaravelMoyasar\LaravelMoyasarServiceProvider;
 
 class TestCase extends Orchestra
 {
+    use InteractsWithViews;
+
     protected function setUp(): void
     {
         parent::setUp();
