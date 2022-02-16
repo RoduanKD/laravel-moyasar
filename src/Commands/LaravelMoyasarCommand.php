@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class LaravelMoyasarCommand extends Command
 {
-    public $signature = 'laravelmoyasar';
+    public $signature = 'laravel-moyasar';
 
     public $description = 'My command';
 

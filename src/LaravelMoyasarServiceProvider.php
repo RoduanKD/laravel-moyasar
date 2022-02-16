@@ -16,11 +16,11 @@ class LaravelMoyasarServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravelmoyasar')
+            ->name('laravel-moyasar')
             ->hasViews()
             ->hasRoute('web')
             ->hasConfigFile('moyasar');
-        // ->hasMigration('create_laravelmoyasar_table')
+        // ->hasMigration('create_laravel-moyasar_table')
             // ->hasCommand(LaravelMoyasarCommand::class);
     }
 }

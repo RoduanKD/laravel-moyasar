@@ -1,12 +1,12 @@
 {
-    "name": "roduankd/laravelmoyasar",
-    "description": "This is my package laravelmoyasar",
+    "name": "roduankd/laravel-moyasar",
+    "description": "This is my package laravel-moyasar",
     "keywords": [
         "RoduanKD",
         "laravel",
-        "laravelmoyasar"
+        "laravel-moyasar"
     ],
-    "homepage": "https://github.com/roduankd/laravelmoyasar",
+    "homepage": "https://github.com/roduankd/laravel-moyasar",
     "license": "MIT",
     "authors": [
         {

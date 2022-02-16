@@ -1,9 +1,9 @@
-# This is my package laravelmoyasar
+# This is my package laravel-moyasar
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/roduankd/laravelmoyasar.svg?style=flat-square)](https://packagist.org/packages/roduankd/laravelmoyasar)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/roduankd/laravelmoyasar/run-tests?label=tests)](https://github.com/roduankd/laravelmoyasar/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/roduankd/laravelmoyasar/Check%20&%20fix%20styling?label=code%20style)](https://github.com/roduankd/laravelmoyasar/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/roduankd/laravelmoyasar.svg?style=flat-square)](https://packagist.org/packages/roduankd/laravelmoyasar)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/roduankd/laravel-moyasar.svg?style=flat-square)](https://packagist.org/packages/roduankd/laravel-moyasar)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/roduankd/laravel-moyasar/run-tests?label=tests)](https://github.com/roduankd/laravel-moyasar/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/roduankd/laravel-moyasar/Check%20&%20fix%20styling?label=code%20style)](https://github.com/roduankd/laravel-moyasar/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/roduankd/laravel-moyasar.svg?style=flat-square)](https://packagist.org/packages/roduankd/laravel-moyasar)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -12,20 +12,20 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require roduankd/laravelmoyasar
+composer require roduankd/laravel-moyasar
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravelmoyasar-migrations"
+php artisan vendor:publish --tag="laravel-moyasar-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravelmoyasar-config"
+php artisan vendor:publish --tag="laravel-moyasar-config"
 ```
 
 This is the contents of the published config file:
@@ -38,7 +38,7 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="laravelmoyasar-views"
+php artisan vendor:publish --tag="laravel-moyasar-views"
 ```
 
 ## Usage
