@@ -15,14 +15,13 @@ You can install the package via composer:
 composer require roduankd/laravel-moyasar
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-moyasar-migrations"
-php artisan migrate
+Then you need to define these variables in .env
+```dotenv
+MOYASAR_PUBLISHABLE_API_KEY="your api key goes here"
+MOYASAR_CURRENCY=USD
 ```
 
-You can publish the config file with:
+Optionally, you can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="laravel-moyasar-config"
@@ -32,6 +31,31 @@ This is the contents of the published config file:
 
 ```php
 return [
+    // Required
+    // Specify where to render the form
+    // Can be a valid CSS selector and a reference to a DOM element
+    'element'=> '.mysr-form',
+
+    // Required
+    // Currency of the payment transaction
+    'currency'=> env('MOYASAR_CURRENCY', 'USD'),
+
+    // Required
+    // A small description of the current payment process
+    'description'=> 'default description',
+
+    // Required
+    'publishable_api_key'=> env('MOYASAR_PUBLISHABLE_API_KEY', null),
+
+    // Required
+    // This URL is used to redirect the user when payment process has completed
+    // Payment can be either a success or a failure, which you need to verify on you system (We will show this in a couple of lines)
+    'callback_url'=> 'moyasar.callback',
+
+    // Optional
+    // Required payments methods
+    // Default: ['creditcard', 'applepay', 'stcpay']
+    'methods'=> ['creditcard', 'applepay', 'stcpay'],
 ];
 ```
 
