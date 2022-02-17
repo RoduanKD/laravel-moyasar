@@ -24,7 +24,7 @@ class Init extends Component
             throw new AmountCanNotBeNegativeException('amount can not be negative, you provided: ' . $this->amount);
         }
 
-        if (!config('moyasar.publishable_api_key')) {
+        if (! config('moyasar.publishable_api_key')) {
             throw new PublishableApiKeyDoesNotExist('key "moyasar_publishable_api_key" is not defined in .env');
         }
     }
