@@ -8,14 +8,14 @@ return [
 
     // Required
     // Currency of the payment transaction
-    'currency'=> env('moyasar_currency', 'USD'),
+    'currency'=> env('MOYASAR_CURRENCY', 'USD'),
 
     // Required
     // A small description of the current payment process
     'description'=> 'default description',
 
     // Required
-    'publishable_api_key'=> env('moyasar_publishable_api_key', null),
+    'publishable_api_key'=> env('MOYASAR_PUBLISHABLE_API_KEY', null),
 
     // Required
     // This URL is used to redirect the user when payment process has completed
