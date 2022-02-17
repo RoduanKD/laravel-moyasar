@@ -5,7 +5,7 @@ namespace RoduanKD\LaravelMoyasar\Components;
 use Illuminate\View\Component;
 use RoduanKD\LaravelMoyasar\Exceptions\AmountCanNotBeNegativeException;
 
-class MoyasarInit extends Component
+class Init extends Component
 {
     /**
      * Create a new component instance.
@@ -31,6 +31,6 @@ class MoyasarInit extends Component
      */
     public function render()
     {
-        return view('LaravelMoyasar::moyasar-init');
+        return view('moyasar::init');
     }
 }

@@ -33,5 +33,5 @@
         // Required payments methods
         // Default: ['creditcard', 'applepay', 'stcpay']
         methods: @json($methods ?? config('moyasar.methods')),
-    });
+    })
 </script>
