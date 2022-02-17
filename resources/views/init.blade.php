@@ -3,7 +3,7 @@
         // Required
         // Specify where to render the form
         // Can be a valid CSS selector and a reference to a DOM element
-        element: {{ $element ?? config('moyasar.element') }},
+        element: '{{ $element ?? config('moyasar.element') }}',
 
         // Required
         // Amount in the smallest currency unit
@@ -15,19 +15,19 @@
 
         // Required
         // Currency of the payment transaction
-        currency: {{ $currency ?? config('moyasar.currency') }},
+        currency: '{{ $currency ?? config('moyasar.currency') }}',
 
         // Required
         // A small description of the current payment process
-        description: {{ $description ?? config('moyasar.description') }},
+        description: '{{ $description ?? config('moyasar.description') }}',
 
         // Required
-        publishable_api_key: {{ config('moyasar.publishable_api_key') }},
+        publishable_api_key: '{{ config('moyasar.publishable_api_key') }}',
 
         // Required
         // This URL is used to redirect the user when payment process has completed
         // Payment can be either a success or a failure, which you need to verify on you system (We will show this in a couple of lines)
-        callback_url: {{ $callback ?? route(config('moyasar.callback_url')) }},
+        callback_url: '{{ $callback ?? route(config('moyasar.callback_url')) }}',
 
         // Optional
         // Required payments methods

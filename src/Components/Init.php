@@ -4,6 +4,7 @@ namespace RoduanKD\LaravelMoyasar\Components;
 
 use Illuminate\View\Component;
 use RoduanKD\LaravelMoyasar\Exceptions\AmountCanNotBeNegativeException;
+use RoduanKD\LaravelMoyasar\Exceptions\PublishableApiKeyDoesNotExist;
 
 class Init extends Component
 {
@@ -21,6 +22,10 @@ class Init extends Component
     ) {
         if ($this->amount < 0) {
             throw new AmountCanNotBeNegativeException('amount can not be negative, you provided: ' . $this->amount);
+        }
+
+        if (!config('moyasar.publishable_api_key')) {
+            throw new PublishableApiKeyDoesNotExist('key "moyasar_publishable_api_key" is not defined in .env');
         }
     }
 

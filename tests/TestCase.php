@@ -30,6 +30,7 @@ class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
+        config()->set('moyasar.publishable_api_key', 'sk_test_MrtwozLJAuFmLKWWSaRaoaLX');
 
         /*
         $migration = include __DIR__.'/../database/migrations/create_laravel_moyasar_table.php.stub';
