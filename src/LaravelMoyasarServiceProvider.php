@@ -20,7 +20,7 @@ class LaravelMoyasarServiceProvider extends PackageServiceProvider
             ->name('laravel-moyasar')
             ->hasViews()
             ->hasViewComponents('moyasar', Init::class)
-            // ->hasRoute('web')
+            ->hasRoute('web')
             ->hasConfigFile('moyasar');
         // ->hasMigration('create_laravel-moyasar_table')
             // ->hasCommand(LaravelMoyasarCommand::class);

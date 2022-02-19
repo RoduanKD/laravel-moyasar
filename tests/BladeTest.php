@@ -44,12 +44,14 @@ it('can render init component', function () {
         // Required
         // This URL is used to redirect the user when payment process has completed
         // Payment can be either a success or a failure, which you need to verify on you system (We will show this in a couple of lines)
-        callback_url: 'http://localhost/moyasar/thanks',
+        callback_url: 'http://localhost/payment/thanks',
 
         // Optional
         // Required payments methods
         // Default: ['creditcard', 'applepay', 'stcpay']
         methods: [\"creditcard\",\"applepay\",\"stcpay\"],
+
+        on_complete: 'http://localhost/checkout/save-payment'
     })
 </script>
 ";
