@@ -2,6 +2,11 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 1.1.0 - 2022-02-19
+- on complete url added to config
+- updated docs with usage guide
+- removed package internal routes
+
 ## 1.0.0 - 2022-02-17
 
 - initial release
