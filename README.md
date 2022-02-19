@@ -79,9 +79,13 @@ php artisan vendor:publish --tag="laravel-moyasar-views"
 
 ## Usage
 
+add moysar style to you page to the page head.
 ```php
-$laravelMoyasar = new RoduanKD\LaravelMoyasar();
-echo $laravelMoyasar->echoPhrase('Hello, RoduanKD!');
+@include('moyasar::head')
+```
+then include init component and provide all the options you need
+```php
+<x-moyasar-init amount="100" />
 ```
 
 ## Testing
