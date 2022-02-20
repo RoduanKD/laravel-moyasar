@@ -4,6 +4,8 @@ namespace RoduanKD\LaravelMoyasar\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Event;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RoduanKD\LaravelMoyasar\LaravelMoyasarServiceProvider;
 
@@ -32,9 +34,10 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
         config()->set('moyasar.publishable_api_key', 'sk_test_MrtwozLJAuFmLKWWSaRaoaLX');
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel_moyasar_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_transactions_table.php.stub';
         $migration->up();
-        */
+
+        $fake = Event::fake();
+        DB::setEventDispatcher($fake);
     }
 }

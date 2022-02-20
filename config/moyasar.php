@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'table' => 'transactions',
     // Required
     // Specify where to render the form
     // Can be a valid CSS selector and a reference to a DOM element
