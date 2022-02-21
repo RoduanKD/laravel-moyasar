@@ -99,6 +99,11 @@ public function handle(TransactionCreated $event)
 }
 ```
 
+and you'll need to update the route for init component
+```php
+<x-moyasar-init amount="100" />
+```
+
 Optionally, you can publish the views using
 
 ```bash
