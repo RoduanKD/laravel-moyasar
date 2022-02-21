@@ -101,7 +101,7 @@ public function handle(TransactionCreated $event)
 
 and you'll need to update the route for init component
 ```php
-<x-moyasar-init amount="100" />
+<x-moyasar-init amount="100" :on-complete="route('moyasar.complete', $membership)" />
 ```
 
 Optionally, you can publish the views using

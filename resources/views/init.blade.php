@@ -34,6 +34,6 @@
         // Default: ['creditcard', 'applepay', 'stcpay']
         methods: @json($methods ?? config('moyasar.methods')),
 
-        on_complete: '{{ $on_complete ?? route(config('moyasar.on_complete_url')) }}'
+        on_complete: '{{ $onComplete ?? route(config('moyasar_on_complete_url')) }}'
     })
 </script>
