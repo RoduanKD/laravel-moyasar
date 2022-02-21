@@ -2,7 +2,6 @@
 
 namespace RoduanKD\LaravelMoyasar\Controllers;
 
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
 use RoduanKD\LaravelMoyasar\Events\TransactionCreated;
