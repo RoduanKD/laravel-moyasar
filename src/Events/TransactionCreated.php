@@ -13,12 +13,12 @@ class TransactionCreated
     /**
      * Create a new event instance.
      *
-     * @param  string  $id
+     * @param  string  $payment_id
      * @param  array|null  $parameters route parameters
      *
      * @return void
      */
-    public function __construct(public string $id, public ?array $parameters = [])
+    public function __construct(public string $payment_id, public ?array $parameters = [])
     {
         //
     }

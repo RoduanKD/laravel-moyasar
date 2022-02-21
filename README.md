@@ -64,12 +64,40 @@ return [
 ];
 
 ```
-Then, you'll need to define the "moyasar.callback" and "moyasar.complete" routes
+Then, you'll need to define the "moyasar.callback" route. this is the route that users will be directed to it after completing the payment process.
+
 ```php
 Route::get('memberships/{membership}/payment/thanks', [MembershipController::class, 'thanks'])->name('moyasar.callback');
-Route::post('memberships/{membership}/payment/completed', [MembershipController::class, 'completed'])->name('moyasar.complete');
 ```
-**note**: you can define the routes however you want.
+
+Optionally, you can override the default payment completed route. this route is visited by moyasar server before the user is redirected to "moyasar.callback" route.
+
+```php
+Route::post('memberships/{membership}/payment/completed', [RoduanKD\LaravelMoyasar\Controllers\PaymentController::class, 'store'])->name('moyasar.complete');
+```
+**Note**: you can define the routes however you want.
+
+### Using Listeners
+When you override the "moyasar.complete" route you'll probably need to change something in your model whenever the payment process is done. You can define listeners to `TransactionCreated` event which contains `payment_id` and all "moyasar.complete" route parameters.
+
+```bash
+php artisan make:listener MarkMembershipAsPaid --event=\RoduanKD\LaravelMoyasar\Events\TransactionCreated
+```
+in your listener you can update the model however you need.
+```php
+/**
+ * Handle the event.
+ *
+ * @param  \RoduanKD\LaravelMoyasar\Events\TransactionCreated  $event
+ * @return void
+ */
+public function handle(TransactionCreated $event)
+{
+    $membership = Membership::find($event->parameters['membership']);
+    $membership->paid_at = now();
+    $membership->update();
+}
+```
 
 Optionally, you can publish the views using
 
