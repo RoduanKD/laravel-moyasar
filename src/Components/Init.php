@@ -18,6 +18,7 @@ class Init extends Component
         public ?string $element = null,
         public ?string $description = null,
         public ?string $callback = null,
+        public ?string $on_complete = null,
         public ?array $methods = null
     ) {
         if ($this->amount < 0) {
