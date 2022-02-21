@@ -2,6 +2,10 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 1.2.1 - 2022-02-21
+
+- fix: on_complete parameter is missing in init component
+
 ## 1.2.0 - 2022-02-21
 
 - add transaction created event
