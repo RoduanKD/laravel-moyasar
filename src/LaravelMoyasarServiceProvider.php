@@ -23,6 +23,6 @@ class LaravelMoyasarServiceProvider extends PackageServiceProvider
             ->hasRoute('web')
             ->hasConfigFile('moyasar')
             ->hasMigration('create_transactions_table');
-            // ->hasCommand(LaravelMoyasarCommand::class);
+        // ->hasCommand(LaravelMoyasarCommand::class);
     }
 }
