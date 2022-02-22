@@ -2,6 +2,11 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 1.2.3 - 2022-02-22
+
+- fix migrations wasn't exported
+- fix default on complete URL not generated
+
 ## 1.2.2 - 2022-02-21
 
 - fix init on-complete case
