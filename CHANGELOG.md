@@ -2,6 +2,10 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 1.2.4 - 2022-02-22
+
+- fix: Target class [laravel-moyasar] does not exist.
+
 ## 1.2.3 - 2022-02-22
 
 - fix migrations wasn't exported
