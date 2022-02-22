@@ -5,7 +5,6 @@ namespace RoduanKD\LaravelMoyasar;
 use Illuminate\Foundation\AliasLoader;
 use Moyasar\Facades\Invoice;
 use Moyasar\Facades\Payment;
-use Moyasar\Moyasar;
 use Moyasar\Providers\LaravelServiceProvider;
 use RoduanKD\LaravelMoyasar\Commands\LaravelMoyasarCommand;
 use RoduanKD\LaravelMoyasar\Components\Init;
