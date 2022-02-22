@@ -2,6 +2,12 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 2.0.0 - 2022-02-22
+
+- require moyasar/moyasar to veryify payments
+- add API key config
+- change publishable API config key
+
 ## 1.2.4 - 2022-02-22
 
 - fix: Target class [laravel-moyasar] does not exist.
