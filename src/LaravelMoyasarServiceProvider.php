@@ -2,6 +2,11 @@
 
 namespace RoduanKD\LaravelMoyasar;
 
+use Illuminate\Foundation\AliasLoader;
+use Moyasar\Facades\Invoice;
+use Moyasar\Facades\Payment;
+use Moyasar\Moyasar;
+use Moyasar\Providers\LaravelServiceProvider;
 use RoduanKD\LaravelMoyasar\Commands\LaravelMoyasarCommand;
 use RoduanKD\LaravelMoyasar\Components\Init;
 use Spatie\LaravelPackageTools\Package;
@@ -24,5 +29,16 @@ class LaravelMoyasarServiceProvider extends PackageServiceProvider
             ->hasConfigFile('moyasar')
             ->hasMigration('create_transactions_table');
         // ->hasCommand(LaravelMoyasarCommand::class);
+    }
+
+    public function packageRegistered()
+    {
+        $this->app->register(LaravelServiceProvider::class);
+    }
+
+    public function packageBooted()
+    {
+        AliasLoader::getInstance()->alias('payment', Payment::class);
+        AliasLoader::getInstance()->alias('invoice', Invoice::class);
     }
 }

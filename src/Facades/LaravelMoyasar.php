@@ -11,6 +11,6 @@ class LaravelMoyasar extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'laravelmoyasar';
+        return 'moyasar';
     }
 }

@@ -1,6 +1,27 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Moyasar API Key
+    |--------------------------------------------------------------------------
+    |
+    | Don't forget to set this in your .env file, as it will be used to contact
+    | Moyasar servers
+    |
+    */
+    'key' => env('MOYASAR_API_KEY'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Moyasar Publishable API Key
+    |--------------------------------------------------------------------------
+    |
+    | This key is used for payment forms on the frontend
+    |
+    */
+    'publishable_key' => env('MOYASAR_API_PUBLISHABLE_KEY'),
+
     'table' => 'transactions',
     // Required
     // Specify where to render the form
@@ -14,9 +35,6 @@ return [
     // Required
     // A small description of the current payment process
     'description' => 'default description',
-
-    // Required
-    'publishable_api_key' => env('MOYASAR_PUBLISHABLE_API_KEY', null),
 
     // Required
     // This URL is used to redirect the user when payment process has completed

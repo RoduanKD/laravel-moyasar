@@ -22,7 +22,7 @@
         description: '{{ $description ?? config('moyasar.description') }}',
 
         // Required
-        publishable_api_key: '{{ config('moyasar.publishable_api_key') }}',
+        publishable_key: '{{ config('moyasar.publishable_key') }}',
 
         // Required
         // This URL is used to redirect the user when payment process has completed

@@ -17,7 +17,7 @@ composer require roduankd/laravel-moyasar
 
 Then you need to define these variables in .env
 ```dotenv
-MOYASAR_PUBLISHABLE_API_KEY="your api key goes here"
+MOYASAR_API_PUBLISHABLE_KEY="your api key goes here"
 MOYASAR_CURRENCY=USD
 ```
 
@@ -45,7 +45,7 @@ return [
     'description' => 'default description',
 
     // Required
-    'publishable_api_key' => env('MOYASAR_PUBLISHABLE_API_KEY', null),
+    'publishable_key' => env('MOYASAR_API_PUBLISHABLE_KEY', null),
 
     // Required
     // This URL is used to redirect the user when payment process has completed

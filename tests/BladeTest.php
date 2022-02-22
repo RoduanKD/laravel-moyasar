@@ -9,7 +9,7 @@ it('can export head partials', function () {
 
 it('can render init component', function () {
     $amount = 100;
-    $publishable_key = config('moyasar.publishable_api_key');
+    $publishable_key = config('moyasar.publishable_key');
 
     $string = sprintf('<x-moyasar-init amount="%s" />', $amount);
     $component = $this->blade($string);
@@ -39,7 +39,7 @@ it('can render init component', function () {
         description: 'default description',
 
         // Required
-        publishable_api_key: '{$publishable_key}',
+        publishable_key: '{$publishable_key}',
 
         // Required
         // This URL is used to redirect the user when payment process has completed
