@@ -2,6 +2,10 @@
 
 All notable changes to `LaravelMoyasar` will be documented in this file.
 
+## 2.0.1 - 2022-02-23
+
+- fix publishable API key is required
+
 ## 2.0.0 - 2022-02-22
 
 - require moyasar/moyasar to veryify payments
