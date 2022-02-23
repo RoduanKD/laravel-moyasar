@@ -39,7 +39,7 @@ it('can render init component', function () {
         description: 'default description',
 
         // Required
-        publishable_key: '{$publishable_key}',
+        publishable_api_key: '{$publishable_key}',
 
         // Required
         // This URL is used to redirect the user when payment process has completed
